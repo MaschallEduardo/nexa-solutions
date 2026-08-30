@@ -2,7 +2,7 @@
 
 Sistema de gerenciamento de chamados desenvolvido para a disciplina de **Manutenção e Evolução de Software**.
 
-O projeto consiste em uma API REST para abertura, consulta e acompanhamento de chamados de suporte, utilizando boas práticas de desenvolvimento, Docker, banco de dados PostgreSQL, testes automatizados e controle de versão com Git.
+O projeto consiste em uma API REST e uma interface web para abertura, consulta e acompanhamento de chamados de suporte, utilizando boas práticas de desenvolvimento, Docker, banco de dados PostgreSQL, testes automatizados e controle de versão com Git.
 
 ---
 
@@ -14,6 +14,13 @@ O projeto consiste em uma API REST para abertura, consulta e acompanhamento de c
 - Django
 - Django REST Framework
 - PostgreSQL
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- CSS responsivo
 
 ### Infraestrutura
 
@@ -96,6 +103,12 @@ Para iniciar a aplicação utilizando Docker:
 
 ```bash
 docker compose up --build
+```
+
+A interface estará disponível em:
+
+```
+http://localhost:3000
 ```
 
 A API estará disponível em:
@@ -205,6 +218,18 @@ Exemplo de resposta:
 
 ---
 
+# Interface web
+
+A interface em Next.js permite:
+
+- Visualizar os indicadores de chamados
+- Cadastrar novos chamados
+- Listar e filtrar chamados por status
+- Alterar o status de um chamado
+- Utilizar o sistema em computadores e celulares
+
+---
+
 # Testes automatizados
 
 O projeto possui testes automatizados para:
@@ -270,6 +295,5 @@ Principais evoluções:
 
 # Possíveis evoluções futuras
 
-- Evolução da interface frontend utilizando Next.js
 - Implementação de autenticação e controle de usuários
 - Melhorias de usabilidade
